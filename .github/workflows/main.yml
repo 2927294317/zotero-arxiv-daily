@@ -31,7 +31,8 @@ jobs:
           mkdir -p config
           cat > config/custom.yaml << 'EOF'
           executor:
-            source: zotero
+            source: 
+              - zotero
           EOF
           echo "Use custom config: "
           cat config/custom.yaml
